@@ -1,17 +1,17 @@
-CompScope
+compscope
 
 Compensation intelligence for comparing total compensation across companies, career levels, roles, and locations.
 
 Live Demo: https://compscope-sable.vercel.app
-GitHub: https://github.com/satyamshh967/CompScope
+GitHub: https://github.com/satyamshh967/compscope
 
 Overview
 
-CompScope is a full-stack compensation intelligence platform built around one core idea:
+compscope is a full-stack compensation intelligence platform built around one core idea:
 
 Levels matter more than job titles.
 
-Instead of treating salary as a single number, CompScope models compensation as:
+Instead of treating salary as a single number, compscope models compensation as:
 
 Company + Role + Level + Location + Base + Stock + Bonus = Total Compensation
 
@@ -144,7 +144,7 @@ GET /api/compare?ids=<id1>,<id2>,<id3>
 
 Data Model
 
-CompScope separates major compensation dimensions into normalized entities:
+compscope separates major compensation dimensions into normalized entities:
 
 Company
    |
@@ -182,7 +182,7 @@ are normalized into a consistent representation for matching.
 
 Duplicate Detection
 
-Before creating a compensation record, CompScope checks for an existing identical combination of:
+Before creating a compensation record, compscope checks for an existing identical combination of:
 
 Company
 Role
@@ -208,7 +208,7 @@ Key product observation:
 
 Compensation becomes more useful when structured by career level, location, role, and compensation components rather than represented as a single salary number.
 
-The research influenced the decision to focus CompScope on compensation intelligence rather than attempting to reproduce complete job, review, community, or benefits platforms.
+The research influenced the decision to focus compscope on compensation intelligence rather than attempting to reproduce complete job, review, community, or benefits platforms.
 
 Technology Stack
 
@@ -268,8 +268,8 @@ Running Locally
 
 1. Clone
 
-git clone https://github.com/satyamshh967/CompScope.git
-cd CompScope
+git clone https://github.com/satyamshh967/compscope.git
+cd compscope
 
 2. Install
 
@@ -303,7 +303,7 @@ npm run build
 
 Deployment
 
-CompScope is deployed on Vercel with PostgreSQL hosted on Neon.
+compscope is deployed on Vercel with PostgreSQL hosted on Neon.
 
 Production: https://compscope-sable.vercel.app
 
@@ -315,7 +315,7 @@ Why levels instead of only titles?
 
 Titles vary significantly between companies. A "Senior Software Engineer" at one organization can represent a different scope and compensation level at another.
 
-CompScope therefore treats career level as a first-class dimension of compensation analysis.
+compscope therefore treats career level as a first-class dimension of compensation analysis.
 
 Why calculate total compensation on the server?
 
@@ -367,6 +367,6 @@ Production deployment
 
 Disclaimer
 
-CompScope's current compensation records are synthetic demonstration data.
+compscope's current compensation records are synthetic demonstration data.
 
 They should not be interpreted as verified salary information, employment offers, or authoritative market compensation benchmarks.
